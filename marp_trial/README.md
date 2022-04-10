@@ -1,5 +1,6 @@
 ---
 marp: true
+theme: gaia
 ---
 
 # Marp trial
@@ -12,9 +13,10 @@ marp でスライドを作ってみた話を書いていく
 
 ---
 
-### なんでそんなことを。普通に Google Slide や Power Point でいいのでは？
+### なんでそんなことを
 
-既存のドキュメントをそのまま PPTX で欲しいという謎要望への対応
+普通に Google Slide や Power Point でいいのでは？
+→既存のドキュメントをそのまま PPTX で欲しいという謎要望への対応
 
 Google Docs で作っているドキュメントを PPTX に置換するのはそれなりに骨
 →**マークダウンから Google Docs と同等のものと PPTX の双方を出力！**
