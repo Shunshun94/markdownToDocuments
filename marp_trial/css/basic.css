@@ -1,0 +1,41 @@
+/* @theme basic */
+
+section {
+    background-color:#ffffff;
+    font-family:'メイリオ';
+    position:relative;
+}
+
+section h2 {
+    font-size:32px;
+    position:relative;
+    top:1.23cm;
+    left:0.46cm;
+}
+
+section h3 {
+    font-size:22px;
+    position:relative;
+    top:1.23cm;
+    left:0.46cm;
+}
+
+section p,
+section pre {
+    position:relative;
+    top:1.46cm;
+    left:0.46cm;
+    font-size:15px;
+}
+
+section ul,
+section ol{
+    position:relative;
+    top:1.46cm;
+    left:0.46cm;
+}
+
+img {
+    width: auto;
+    max-height: 50%;
+}

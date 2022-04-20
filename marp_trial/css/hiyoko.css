@@ -1,0 +1,10 @@
+/* @theme hiyoko */
+@import 'basic';
+
+section {
+    background-color:skyblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("./pics/icon.jpg");
+    background-position:94% 2%;
+}

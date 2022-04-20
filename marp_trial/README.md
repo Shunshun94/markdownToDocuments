@@ -1,6 +1,7 @@
 ---
-marp: true
-theme: gaia
+marp: false
+theme: hiyoko
+paginate: true
 ---
 
 # Marp trial
