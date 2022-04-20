@@ -71,7 +71,7 @@ Google Docs で作っているドキュメントを PPTX に置換するのは�
 
 ---
 
-#### マークダウンファイル編集の注意点1 先頭に挿入
+### マークダウンファイル編集の注意点1 先頭に挿入
 
 先頭に以下の呪文を入れる必要あり
 
@@ -83,7 +83,7 @@ marp: true
 
 ---
 
-#### マークダウンファイル編集の注意点2 改ページ
+### マークダウンファイル編集の注意点2 改ページ
 
 3つハイフンで改ページ
 
@@ -106,3 +106,71 @@ marp: true
 
 右上のサンドイッチめいたアイコンをクリック後、
 Export Slide Deck... をクリック
+
+---
+
+## テーマを変更する
+
+CSS でテーマ（見た目）を指定できる。
+
+---
+
+### CSS を作成する
+
+[公式のガイド](https://marpit.marp.app/theme-css)を参考に。
+以下のようにテーマの名前を入れないと動かないので注意。
+
+```
+/* @theme theme-name */
+```
+
+---
+
+### 他のテーマを読み込む
+
+CSS 内で `@import` することで他のテーマを読み込める。
+
+```
+@import 'gaia'
+```
+
+---
+
+### ビルドする時に CSS を読み込む
+
+これが難しいので注意。
+設定の `Markdown > Marps:Themes` に対象の CSS のパスを入れる。
+ワークスペースのルートからのパスを入れる必要があるので注意。
+
+---
+
+### 設定例
+
+```
+/(ワークスペースのルート)
+└markdownToDocuments
+　└marp_trial
+　　├README.md
+　　└css
+　　　├basic.css
+　　　└hiyoko.css
+```
+ならば以下2行を入れる
+```
+./markdownToDocuments/marp_trial/css/hiyoko.css
+./markdownToDocuments/marp_trial/css/basic.css
+```
+
+---
+
+### CSS の Tips
+
+HTML を生成した後それを元に PDF や pptx を生成しているようなので
+HTML を生成してその構造を確認しながら CSS を書くのが吉っぽい。
+
+---
+
+### 生成された HTML のサンプル
+
+[hiyoko.css](./css/hiyoko.css)を読み込んでこの[README.md](./README.md)をビルドした例：[README.html](./README.html)
+
