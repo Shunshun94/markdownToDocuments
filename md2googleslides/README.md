@@ -11,6 +11,8 @@
 
 ### 重要な情報へのアクセスと言われてアクセスがブロックされた
 
+![得られた警告](./pics/applicationIsBlocked_becauseAccessToPrivateInfo.png)
+
 [issue95](https://github.com/googleworkspace/md2googleslides/issues/95) を参考に対応を試みている。
 
 #### clientId と clientSecret を書き換える？
