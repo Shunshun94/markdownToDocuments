@@ -174,3 +174,10 @@ HTML を生成してその構造を確認しながら CSS を書くのが吉っ�
 
 [hiyoko.css](./css/hiyoko.css)を読み込んでこの[README.md](./README.md)をビルドした例：[OUTPUT_SAMPLE.html](./OUTPUT_SAMPLE.html)
 
+### 課題
+
+HTML をまず生成した後、それをプリントアウトするようにして PDF や PPTX を生成しているようだ。
+そのためか、生成された PPTX はページ全体が1つの画像となっており、再編集ができない。
+
+すなわち、最初に挙げた謎要望が「再編集不能な PDF ではなく再編集可能な PPTX で」であれば
+このアプローチは上手くいかない。
