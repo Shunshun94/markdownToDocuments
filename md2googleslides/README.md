@@ -1,5 +1,9 @@
 # md2googleslides trial
 
+## 結論
+
+多分このアプローチうまくいかないよ
+
 ## 導入
 
 ### 導入ガイド
@@ -35,9 +39,25 @@
 
 ないし、master ブランチの最新版を手動で適用するでも良いとのことだが、それだと上述の OAuth 2.0 ポリシーのアラートが発生して上手くいかなかった。
 
+### アプリ側の問題では？
+
+エラーメッセージは次のようになっている。
+
+#### 日本語
+
+> アプリ デベロッパーの方は、これらのリクエストの詳細が Google のポリシーを遵守していることをご確認ください。
+> `redirect_uri: urn:ietf:wg:oauth:2.0:oob`
+
+#### 英語
+
+> If you’re the app developer, make sure that these request details comply with Google policies.
+> `redirect_uri: urn:ietf:wg:oauth:2.0:oob`
+
+[Google Developers Japan: セキュリティが強化された OAuth フローで Google OAuth インタラクションの安全性が向上](https://developers-jp.googleblog.com/2022/03/oauth-google-oauth.html) を見ると
+"OAuth アウトオブバンド（OOB）フローが非推奨に" とある。このフローを使っているか否かを調べるには "アプリのコードか、外向きのネットワーク呼び出し（アプリで OAuth ライブラリを使っている場合）を調べ、アプリで行っている Google OAuth 認可リクエストの “redirect_uri” パラメータに次の値が含まれているかどうかを確認してください" とのこと。これは [auth.ts#L55](https://github.com/googleworkspace/md2googleslides/blob/928ef4ecb3f88c0d5ef3008a8e0f14e727ad54f8/src/auth.ts#L55) に存在した。
+
 ## 懸念点
 
 ### メンテされてなくね？
-
 
 はい（はい）
