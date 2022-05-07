@@ -172,5 +172,5 @@ HTML を生成してその構造を確認しながら CSS を書くのが吉っ�
 
 ### 生成された HTML のサンプル
 
-[hiyoko.css](./css/hiyoko.css)を読み込んでこの[README.md](./README.md)をビルドした例：[README.html](./README.html)
+[hiyoko.css](./css/hiyoko.css)を読み込んでこの[README.md](./README.md)をビルドした例：[OUTPUT_SAMPLE.html](./OUTPUT_SAMPLE.html)
 
